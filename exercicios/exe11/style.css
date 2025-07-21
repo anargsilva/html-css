@@ -1,0 +1,31 @@
+@charset "UTF-8" ;
+/*fiz isso acima para o site nao ter problemas com caracteres especiais*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-image: linear-gradient(to right, #027373, #038C7F); /* da para colocar to right, to bottom 
+    (baixo), to left, to top*/
+}
+main{
+    background-color: white; /*isso deixa so o fundo do meu conteudo branco*/
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #012e2e; /*sombra da caixa*/
+    padding: 10px;
+    margin: auto;
+}
+h1{
+    color: #A9D9D0;
+    text-align: center;
+    text-shadow: 1px 3px 3px #69837e; /*sombra do texto*/
+}
+h2{
+   color: #027373;
+}
+p{
+    text-align: justify;
+}
+

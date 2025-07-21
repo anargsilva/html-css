@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML</title>
+</head>
+<style>
+    mark{
+        background-color: violet;
+    }
+</style>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor</p>
+    
+        <p><mark>Poster é para deixar uma imagem de capa e controls para reproduzir o video (aparece o play) <br>A tag Muted precisa ser inserida antes do autoplay pq o navegador nao aceita videos com som</mark></p>
+    
+    <video width="400" poster="imagem/imagem.webp" controls muted autoplay loop> <!--Poster é para deixar uma imagem de capa e controls para reproduzir o video (aparece o play) a tag Muted precisa ser inserida antes do autoplay pq o navegador nao aceita videos com som-->
+        <source src="midia/meu-video.mp4"  type="video/mp4">
+        <source src="midia/Meu-Video(1).webm" type="video/webm">
+        <source src="midia/Meu-Video(1).mp4" type="video/mp4"> <!--colocar sempre do menor para o maior, pq isso faz o navegador testar qual ele tem compatibilidade, se nao carregar um ele tenta o outro-->
+        <p>Se seu navegador nao tem compatibilidade com reproduçao de videos.</p>
+    </video>
+    <h1>Inserindo videos do Youtube</h1>
+    <p><mark>Basta copiar a incorporaçao do video pelo youtube e colar</mark></p>
+    
+    <iframe width="400" height="215" src="https://www.youtube.com/embed/rdHzZw_8pfY?si=HQO1CWY1wIflsPAX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</ht

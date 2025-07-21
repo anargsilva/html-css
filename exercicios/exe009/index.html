@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou aumente e diminua o tamanho do seu navegador. <br> <br><mark> Comentarios: a tag source quer dizer que vai carregar a foto grande, mas se for menor de 1050px, ele vai carregar a foto M e se for menor ainda carrega a P. é importante a ordem estar correta, menor ao maior, comecei pelo maior e fui diminuindo <br> Para colocar audio usar a tag audio e colocar controls autoplay (eu coloquei sem autoplay e funcionou tambem) </audio></mark>
+    </p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/fotoP.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/fotoM.png" type="image/png"> <!--isso quer dizer que vai carregar a foto grande, mas se for menor de 1000px, ele vai carregar a foto M-->
+        <img src="imagens/fotoG.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/musica.mp3" controls autoplay ></audio>
+    <!--da p usar MP3 WAV OGG para reproduzir em outros navegadores pq o mp3 ficou limitado-->
+    <p><mark>abaixo estou mostrando outros tipos de audios e oq fazer caso o navegador nao <br>consiga reproduzir</mark></p>
+    <audio preload="metadata" autoplay controls loop> <!--metadata carrega informacoes mas so sera produzido quando o usuario clicar, o loop quando chega no final do audio ele recomeça--> 
+    <source src="midia/musica.mp3" type="audio/mpeg">
+    <source src="midia/musica.wav" type="audio/wav">
+    <source src="midia/musica.ogg" type="audio/ogg">
+    <p>Infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/musica.mp3">Clique  aqui para baixar o arquivo</a></p>
+    </audio>
+   
+</body>
+</html>
